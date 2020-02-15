@@ -1,28 +1,34 @@
-# ProGrad
+![Image description](https://i1.faceprep.in/ProGrad/face-logo-resized.png)
 
-## Superwars
+# ProGrad Lab | Superwars Stage 3
 
-Dustin and Lucus are best friends, they spend their weekends watching superhero series and playing superhero games. One Friday in school Mr.Hooper who is their computer science faculty member taught them HTML, CSS, and JavaScript. So what's next? It's Weekend! Lucus and Dustin will be on their laptops. Are they watching series or playing games? Lucus says, No we are building a new game.
+Well, in case you forgot the story line, then here it is.
 
-Lucus always loves protagonists like most of us. But Dustin is quite crazy he likes antagonists. So now they are collecting a bunch of their favorite Super Heroes and Super-Villains names along with images. Did they tell you about the game that they are building? Uh no. Okay, lemme explain. They are going to facilitate the ultimate war between Super Heroes and Super-Villains. As they are new to these technologies, they need **YOU** to help them build this game. Go to the `src/app.js` file and complete all the unfinished code to propel both of these young champ's dreams.
+Dustin and Lucus are best friends. They spend their weekends watching superhero series and playing superhero games. One Friday at school Mr.Hooper, their computer science faculty taught them HTML, CSS, and JavaScript. Dustin & Lucus realised they could build super cool super hero stuff using their knowledge. 
 
-## What should you do?
+The subsequent weekend, they decided to do it. Lucus and Dustin are now all set to build something super cool.
 
-- Fork this repo
-- Clone this repo
-- Practice JavaScript Array Methods - _map, reduce, filter, join_
+Lucus always loves protagonists like most of us. But Dustin is quite crazy, he likes antagonists. So they decided to collect a bunch of their favorite Super Heroes and Super Villains names along with their pictures. Did they tell you about the game that they are gonna build? 
 
-## How do you submit?
+Okay, let us explain. They are going to facilitate the ultimate war between Super Heroes and Super Villains. As they are new to these technologies, they need a **ProGrad** to help them build this game.
 
-- Upon completion, run the following commands:
+## What should you do
+```
+Fork this repo
+Clone this repo
+Practice JavaScript Basics - Operators, Conditions, Loops
+```
 
-  ```
-  git add .
-  git commit -m "prograd ID"
-  git push origin master
-  ```
+## How To Submit
+```
+Upon completion, run the following commands:
 
-- Create a pull request so your teaching mentors can check your work.
+git add .
+git commit -m "ProGrad ID"
+git push origin master
+
+And finally, create a pull request so your ProGrad Mentor (PM) can review your work.
+```
 
 ## Starter code
 
@@ -36,14 +42,14 @@ The `src/app.js` contains an array of 20 Super Heroes and Super-Villains. We are
 
 ### Tests
 
-Ohh yes! We have our beloved tests, and you already know how this works. Open the `SpecRunner.html` file on your browser and start coding to pass the test. Remember to focus on one test at a time and read carefully the instructions to understand what you have to do.
+Open the `SpecRunner.html` file on your browser and start coding to pass the test. Remember to focus on one test at a time and read carefully the instructions to understand what you have to do.
 
-## Trial 1: MAKE IT SIMPLE !
+### Progression 1: Keep it simple
 
-In `initPlayers()`, `map` the passed constant array and  create JSON Objects, such that each player contain name, strength, image url and type.  
+In `initPlayers()`, `map` pass a constant array and create JSON Objects, such that each player contains name, strength, image url and type.  
 * Use default `strength` as any number.  
 * `image` can be sequential i.e. "images/super-"+(i+1)+".png"  
-* `type` of player can alternating between hero and villain or your own logic
+* `type` of player can alternating between hero and villain or your own logic.
 * It should _return an array_ of player objects.
     ```javascript
     [
@@ -56,10 +62,9 @@ In `initPlayers()`, `map` the passed constant array and  create JSON Objects, su
     ]
     ```
 
-## Trial 2: SHRINK DOWN !
+### Progression 2: Shrink down
 
-In `buildPlayers()`, Instead of using for loop, use chaining of Array methods - filter, map and join to loop through the created JSON objects and accumulate HTML 
-template as below and _return that HTML template_.
+In `buildPlayers()`, instead of using for loop, use chaining of Array methods - filter, map and join to loop through the created JSON objects and accumulate HTML template as below and _return that HTML template_.
  ```JS
 <div class="player">
     <img src="${players[i].image}">
@@ -71,3 +76,5 @@ template as below and _return that HTML template_.
 ## Expected Output
 
 ![Superwars](doc/superwars-array.png)
+
+Happy Coding ProGrad ❤️
