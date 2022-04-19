@@ -29,7 +29,7 @@ const initPlayers = (players) => {
         agent.name=p;
         agent.strength = getRandomStrength();
         agent.image = `images/super-${i + 1}.png`;
-        agent.type = i % 2 == 0 ? "hero" : "villain";
+        agent.type = (i % 2 != 0) ? "hero" : "villain";
         detailedPlayers.push(agent);
     });
 
@@ -43,16 +43,16 @@ const getRandomStrength = () => {
 
 // Build player template
 const buildPlayers = (players, type) => {
-    let fragment = '';
     // Using chaining of Array methods - filter, map and join
-    fragment=players.filter((p) => p.type == type).map((p,i) => {
+    let fragment = players.filter((p) => p.type === type);
+    let card = fragment.map((p) => {
         return `
         <div class="player">
-            <img src="${players[i].image}" alt="">
-            <div class="name">${players[i].name}</div>
-            <div class="strength">${players[i].strength}</div>
+            <img src="${p.image}" alt="">
+            <div class="name">${p.name}</div>
+            <div class="strength">${p.strength}</div>
         </div>`}).join("");
-    return fragment;
+    return card;
 }
 
 // Display players in HTML
